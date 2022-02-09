@@ -1,30 +1,183 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Коммерсантъ Картотека</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Коммерсантъ Картотека</title>
 </head>
 
-<body>
-    <p>Hello world!</p>
-    <p>Hello world!</p>
-    <p>Hello world!</p>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
-    <a href="#">Ссылка</a>
+<body class="page__body">
+
+  <main class="page-main">
+    <aside class="sidebar">
+      <nav class="main-nav">
+        <ul class="main-nav__user-name">
+          <li class="main-nav__user-name-item">
+            <a class="main-nav__user-name-link main-nav__user-name-link--main" href="#">Главная</a>
+          </li>
+          <li class="main-nav__user-name-item">
+            <a class="main-nav__user-name-link" href="#">Константин<br> Константиновский</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__menu">
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Мероприятия</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Сотруники</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Заметки</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Статистика</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Удобрения</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Погода</a>
+          </li>
+          <li class="main-nav__menu-item">
+            <a class="main-nav__menu-link" href="#">Организации</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <section class="info">
+      <div class="info__wrapper">
+        <div class="info__choice-name">
+          <h1>ИП Васильев</h1>
+          <ul class="info__menu-list">
+            <li class="info__menu-item info__menu-item--add">
+              <a href="#">Плюс</a>
+            </li>
+            <li class="info__menu-item info__menu-item--settings">
+              <a href="#">Шестеренка</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="info__blocks">
+          <li class="info__block-item info__block-item--fields">
+            <h2>Работа с полями</h2>
+          </li>
+          <li class="info__block-item info__block-item--harvest">
+            <h2>Статистика урожая</h2>
+            <p>Поволжье</p>
+          </li>
+          <li class="info__block-item info__block-item--weather">
+            <h2>Погода в Курской области</h2>
+            <div class="info__block-temperature">
+              <time class="info__block-date" datetime="2020-08-28">28.08.2020 <span>Среда</span></time>
+              <p class="info__block-temperature-weather">+28 <sup>&#176;C</sup></p>
+            </div>
+            <div class="info__block-temperature-more-detaled-1">
+              <p>750 мм рт. ст.</p>
+              <p>Солнечно</p>
+            </div>
+            <div class="info__block-temperature-more-detaled-2">
+              <p>3,5 м/c</p>
+              <p>Осадки 7%</p>
+            </div>
+          </li>
+          <li class="info__block-item info__block-item--reports">
+            <table class="info__blog-table-statistic">
+              <caption class="info__block-table-title">Отчёты и статистика</caption>
+              <thead>
+                <tr>
+                  <th>2020 год</th>
+                  <th>2019 год</th>
+                  <th>2018 год</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="info__block-table-first-row">
+                  <td>123 000 000</td>
+                  <td>90 568 666</td>
+                  <td>200 568 666 </td>
+                </tr>
+                <tr class="info__block-table-second-row">
+                  <td>123 587 569 </td>
+                  <td>123 587 569</td>
+                  <td>123 587 569 </td>
+                </tr>
+                <tr class="info__block-table-third-row">
+                  <td>258 654 588</td>
+                  <td>258 654 588</td>
+                  <td>258 654 588</td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li class="info__block-item info__block-item--staff">
+            <h2>Сотрудники</h2>
+            <div class="info__block-staff-container">
+              <dl class="info__block-staff">
+                <dt>Иванов Иван Иванович</dt>
+                <dd>Заместитель</dd>
+                <dt>Константинов Иван Иванович</dt>
+                <dd>Секретарь</dd>
+              </dl>
+              <ul class="info__block-staff-contacts">
+                <li class="info__block-staff-item">
+                  <a class="info__block-staff-phone" href="#">Т</a>
+                  <a class="info__block-staff-email" href="#">П</a>
+                </li>
+                <li class="info__block-staff-item">
+                  <a class="info__block-staff-phone" href="#">Т</a>
+                  <a class="info__block-staff-email" href="#">П</a>
+                </li>
+              </ul>
+            </div>
+            <a class="info__block-see-more-link" href="#">Показать ещё</a>
+          </li>
+          <li class="info__block-item info__block-item--diagram">
+            <div class="info__block-statistic-years">
+              <h2>Статистика пшена на полях ЦАО</h2>
+              <select name="volume" id="volume">
+                <option value="1">По годам</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+              </select>
+            </div>
+
+            <ul class="info__block-statistic-list">
+              <li class="info__block-statistic-item">Урожай 2020
+                <div class="info__block-statistic-item-text">
+                  <p>15 150 000 тонн</p>
+                  <p>120 областей</p>
+                </div>
+              </li>
+              <li class="info__block-statistic-item">Урожай 2019
+                <div class="info__block-statistic-item-text">
+                  <p>102 650 980 тонн</p>
+                  <p>250 областей</p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="info__block-item info__block-item--technic">
+            <h2>Арендуемая техника</h2>
+            <p>ООО "Магнат Мед</p>
+            <ul class="info__block-technic-list">
+              <li class="info__block-technic-item">Экскаваторы 2020
+                <p>15 100 машин</p>
+                <p>130 областей</p>
+                <p>5 предприятий</p>
+              </li>
+            </ul>
+            <a href="#">Добавить технику</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
