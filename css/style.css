@@ -1,0 +1,18 @@
+a {
+  display: block;
+  color: #0f0402;
+  font-size: 22px;
+  background-color: #f8fcf9;
+  width: 100px;
+}
+a:hover {
+  color: #5cf702;
+  font-size: 16px;
+  background-color: green;
+}
+
+p {
+  font-size: 20px;
+  color: #dba614;
+}
+/*# sourceMappingURL=style.css.map */

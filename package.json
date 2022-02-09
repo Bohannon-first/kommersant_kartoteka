@@ -1,0 +1,30 @@
+{
+  "name": "kommersant_kartoteka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.49.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bohannon-first/kommersant_kartoteka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bohannon-first/kommersant_kartoteka/issues"
+  },
+  "homepage": "https://github.com/Bohannon-first/kommersant_kartoteka#readme"
+}

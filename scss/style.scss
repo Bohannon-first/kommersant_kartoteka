@@ -1,0 +1,19 @@
+a {
+    display: block;
+    color: rgb(15, 4, 2);
+    font-size: 22px;
+    background-color: rgb(248, 252, 249);
+
+    &:hover {
+        color: rgb(92, 247, 2);
+        font-size: 16px;
+        background-color: green;
+    }
+
+    width: 100px;
+}
+
+p {
+    font-size: 20px;
+    color: rgb(219, 166, 20);
+}
