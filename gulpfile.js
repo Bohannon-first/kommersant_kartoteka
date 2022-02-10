@@ -4,12 +4,16 @@ const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const svgStore = require('gulp-svgstore');
 const rename = require('gulp-rename');
+const gulpAutoprefixer = require('gulp-autoprefixer');
 
 // Компилирование sass файла в css
 gulp.task('sass-compile', function () {
     return gulp.src('scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(gulpSass())
+    .pipe(gulpAutoprefixer({
+			cascade: false
+		}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.stream());

@@ -95,6 +95,8 @@ a {
   flex-wrap: wrap;
   height: inherit;
 
+  // background-color: $color-bgc-sidebar;
+
   @media (max-width: $mobile-width) {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -212,6 +214,10 @@ a {
 .info {
   background-color: $color-bgc-main;
   flex-grow: 1;
+
+  // @media (max-width: $mobile-width) {
+  //   width: fit-content;
+  // }
 }
 
 .info__wrapper {
@@ -228,6 +234,7 @@ a {
 
   @media (max-width: $mobile-width) {
     width: 340px;
+    // padding: 0;
   }
 }
 
@@ -284,6 +291,7 @@ a {
   }
 }
 
+
 .info__menu-item a {
   color: $basic-white;
 }
@@ -325,6 +333,7 @@ a {
   padding-right: 20px;
   padding-bottom: 25px;
   padding-left: 20px;
+  // padding: 25px 20px;
   box-sizing: border-box;
   box-shadow: 7px 7px 8px $block-item-shadow;
 }
@@ -357,6 +366,7 @@ a {
 .info__block-temperature-more-detaled-2 {
   color: $secondary-text;
   display: flex;
+  // justify-content: space-between;
 }
 
 .info__block-temperature-more-detaled-1 p,
@@ -421,6 +431,7 @@ a {
     grid-row: 3 / 4;
   }
 }
+
 
 .info__block-item--reports {
   grid-column: 1 / 3;
