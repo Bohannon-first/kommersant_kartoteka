@@ -1,8 +1,9 @@
 const gulp = require('gulp');
 const gulpSass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
-// const watch = require('gulp-watch');
 const browserSync = require('browser-sync').create();
+const svgStore = require('gulp-svgstore');
+const rename = require('gulp-rename');
 
 // Компилирование sass файла в css
 gulp.task('sass-compile', function () {
@@ -13,6 +14,14 @@ gulp.task('sass-compile', function () {
     .pipe(gulp.dest('css'))
     .pipe(browserSync.stream());
 })
+
+// Спрайт
+gulp.task('sprite', function () {
+  return gulp.src('img/icons-sprite/*.svg')
+    .pipe(svgStore({inlineSvg: true}))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('img'));
+});
 
 // Перезагрузка браузера
 gulp.task('refresh', function (done) {
@@ -29,9 +38,9 @@ gulp.task('server', function () {
       cors: true,
       ui: false
     });
-  
+
     gulp.watch('scss/**/*.scss', gulp.series('sass-compile'));
     gulp.watch('*.html', gulp.series('refresh'));
   });
 
-gulp.task('start', gulp.series('sass-compile', 'server'));
+gulp.task('start', gulp.series('sass-compile', 'sprite', 'server'));
